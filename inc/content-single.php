@@ -16,15 +16,17 @@
 <?php endif; ?>
 
 
+<?php if ( get_option('theme_author_post') == 'checked') { ?>
 <?php if(is_single()) : ?>
 		<?php get_template_part('inc/about_author'); ?>
 <?php endif; ?>
+<?php } ?>
 
-
+<?php if ( get_option('theme_alsolike_post') == 'checked') { ?>
 <?php if(is_single()) : ?>
 		<?php get_template_part('inc/related_posts'); ?>
 <?php endif; ?>
-
+<?php } ?>
 
 
 <?php comments_template( '', true );  ?>
