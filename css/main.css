@@ -1512,13 +1512,6 @@
 
 /*** Post ***/
 
-    .post-entry p {
-        margin: 0 auto;
-        clear:both;
-		max-width:100%;
-		height:auto;
-	}
-
 
     .post-entry img {
         margin: 0 auto;
