@@ -16,7 +16,7 @@
 							<p><?php echo sp_string_limit_words(get_the_excerpt(), 20); ?>&hellip;</p>
                                     
                                 <p class="block-postMeta">
-                                    发布于 <?php echo mutheme_time_since(strtotime($post->post_date_gmt)); ?>
+                                    <?php echo mutheme_time_since(strtotime($post->post_date_gmt)); ?>
                                 <span class="middotDivider"></span>
                                     <?php sp_category(' '); ?>
                                 <span class="middotDivider"></span>
