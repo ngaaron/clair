@@ -102,10 +102,10 @@
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1080px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -113,7 +113,7 @@
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -140,6 +140,7 @@
 
 	p {
 		margin: 0 0 12px 0;
+        letter-spacing: 0.05rem;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1106,7 +1107,7 @@
 
 		}
 .full-page{
-        padding: 4em 4em 2em 4em;
+        padding: 4em 1em 2em 1em;
 		background-color: #ffffff !important;
 		border-radius: 4px;
 }
@@ -1510,7 +1511,21 @@
 
 
 /*** Post ***/
+
+    .post-entry p {
+        margin: 0 auto;
+        clear:both;
+		max-width:100%;
+		height:auto;
+	}
+
+
     .post-entry img {
+        margin: 0 auto;
+        clear:both;
+		max-width:100%;
+		height:auto;
+	}.post-entry img {
         margin: 0 auto;
         clear:both;
 		max-width:100%;
@@ -1602,63 +1617,28 @@
 	
 }
 
-.item-related {
-        text-align: center!important;
-	width:48%;
+.related {
+    text-align: center!important;
+	width:49%;
+    height: auto;
 	float:left;
-	margin-right:4%;
+	margin-right:2%;
 }
 
-@media screen and (max-width: 800px) {
-    .item-related {
+@media screen and (max-width: 980px) {
+    .related {
     text-align: center!important;
 	width:100%;
 	float:left;
 	margin-right:0%;
 }
 }
-.item-related:last-child {
+.related:last-child {
 	margin-right:0;
 }
-
-.item-related a {
-				-moz-transition: -moz-transform 0.2s ease;
-				-webkit-transition: -webkit-transform 0.2s ease;
-				-ms-transition: -ms-transform 0.2s ease;
-				transition: transform 0.2s ease;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-                vertical-align:middle;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				display: block;
-}
-
-.item-related img {
-    padding-top: 6px;
-	margin-bottom:6px;
-	width:100%;
-	height:auto;
-}
-.item-related h3 {
-	margin-bottom:0px;
-    letter-spacing: 0rem !important;
-}
-.item-related h3 a {
-	font-size:14px;
-	color:#424242;
-	
-}
-.item-related h3 a:hover {
-	text-decoration:underline;
-}
-.item-related span.date {
-    font-size: 14px!important;
-	font-style:italic;
-	color:#999;
+.related img {
+    width: 100%;
+	height: auto;
 }
 
 

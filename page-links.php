@@ -24,7 +24,8 @@
                             echo '
                 <li class="link-meta">
                     <a href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >
-                    <img class="link-img" src="http://api.page2images.com/directlink?p2i_url=' . $bookmark->link_url . '&p2i_key=1b903dca742f9935&p2i_device=6&p2i_size=200x200"></a>
+                    <img class="link-img" src="https://api.thumbalizr.com/?url=' . $bookmark->link_url . '&width=250">
+                    </a>
                     <span class="link-sitename">'. $bookmark->link_name .'</span>
                     <a class="link-avator">'. get_avatar($bookmark->link_notes,64) .' </a>
                 </li>

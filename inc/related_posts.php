@@ -28,17 +28,19 @@ if ($categories) {
         </div>
 		      <?php while( $my_query->have_posts() ) {
                 $my_query->the_post();?>
-        <div class="item-related">
-                <a href="<?php echo get_permalink() ?>">
+                    <article class="item related">
+							<header>
+								<a href="<?php echo get_permalink() ?>">
                                     <?php if(has_post_thumbnail()) : ?>
                                         <img src="<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'misc-thumb' ); echo $image[0]; ?>" alt="<?php the_title(); ?>" />
                                     <?php else : ?>
-                                        <img src="../img/banner.jpg" alt="<?php the_title(); ?>">
+                                        <img src="<?php echo get_option('def_banner'); ?>" alt="<?php the_title(); ?>">
                                     <?php endif; ?>
                                 </a>
-				<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<span class="date"><?php the_time( get_option('date_format') ); ?></span>
-        </div>
+								<h3><?php the_title(); ?><br/><?php echo mutheme_time_since(strtotime($post->post_date_gmt)); ?></h3>
+                                
+							</header>
+						</article>
 		<?php
 		}
 		echo '</div>';
@@ -48,4 +50,7 @@ $post = $orig_post;
 wp_reset_query();
 
 ?>
+        
+                   
+   
         
