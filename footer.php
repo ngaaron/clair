@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @since clair 1.2
  */
 ?>
 
@@ -26,6 +26,13 @@
 	        
 
 <?php wp_footer(); ?>
-
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
 </body>
 </html>

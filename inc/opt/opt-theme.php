@@ -1,4 +1,3 @@
-
 <div style="margin:50px auto;background-color: #fff;max-width: 800px;border-bottom:3px solid #f2e929;">
 <div style="border:2px solid #f2e929;  padding:10px 30px 0px 30px;">
 <div style="width: 88px; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;"><a href="http://ngaaron.com" target="new" ><img width="100%" src="http://ngaaron.com/wp-content/uploads/2016/02/aas_fav.png"></a></div>

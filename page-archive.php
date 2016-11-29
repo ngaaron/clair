@@ -95,7 +95,7 @@
                         foreach ($value_m as $key => $value_d) {
                             $output .=  $value_d;
                         }
-                        $output .= '<div class="archive-comments-count"> Nothinng gone change. </div></ul>';
+                        $output .= '<div class="archive-comments-count">' . count($postresults) . ' Nothinng gone change. </div></ul>';
                     }
                 }
                 echo $output;
