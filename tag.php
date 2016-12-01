@@ -11,6 +11,7 @@
  * @subpackage Clair
  * @since Clair 1.0
  */
+?>
 
 <?php get_header(); ?>
 	

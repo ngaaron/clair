@@ -11,9 +11,9 @@
  * @subpackage Clair
  * @since Clair 1.0
  */
+?>
 
-
-get_header(); ?>
+<?php get_header(); ?>
 
    <section  id="primary" class="content-area">
 	<main  class="full-page">
