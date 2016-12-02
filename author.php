@@ -22,21 +22,26 @@
                                                 <?php echo get_option('def_banner'); ?>
                                            <?php endif; ?>
                                        );">
+<?php
+if(isset($_GET['author_name'])) :
+$curauth = get_userdatabylogin($author_name);
+else :
+$curauth = get_userdata(intval($author));
+endif;
+?>
 				<div class="inner">
-                    <h1 class="post-page-title "><?php printf( __( '%s', 'solopine' ), single_cat_title( '', false ) ); ?></h1>
-					<p>最近更新：<?php the_title();?>/<?php the_time( get_option('date_format') ); ?></p>
-                    <p><?php _e( 'Browsing Category', 'solopine' ); ?></p>
+                    <h1 class="post-page-title ">作者档案:<?php echo $curauth->display_name; ?></h1>
+					<p>个人主页：<a rel="nofollow" href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a></p>
+                    <p>开始时间<?php the_author_meta( 'user_registered', 1 ); ?></p>
 				</div>
 </header><!-- .site-header -->
 
 
         <div id="wrapper">   
                 <section id="content" class="main items">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<?php get_template_part('inc/content-grid', 'page'); ?>
-				<?php endwhile; ?>
-                    <?php solopine_pagination(); ?>
-				<?php endif; ?>
+               
+
+
                 </section>
         </div>
 
