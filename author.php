@@ -1,11 +1,11 @@
 <?php
 /**
  * Theme Name: Clair
- * Theme URI: https://onemorecafe.cn/
+ * Theme URI: https://ngaaron.com/2020
  * Author: AARON
  * Author URI: https://ngaaron.com/
- * Description: A free wordpress threme name Clair design and develop by Aaron in 2016.
- * Version: 1.2
+ * Description: A free wordpress threme named Clair design and develop by Aaron in 2016.
+ * Version: 1.4
 
  * @package WordPress
  * @subpackage Clair

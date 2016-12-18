@@ -5,8 +5,8 @@
  * Displays all of the head element and everything up until the "site-content" div.
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @subpackage Clair
+ * @since Clair 1.0
  */
 
 ?><!DOCTYPE html>
@@ -121,7 +121,7 @@ $keywords = trim(strip_tags($keywords));
 				<div class="inner">
                     <h1 class="post-page-title "><?php the_title();?></h1>
 					<p><?php echo sp_string_limit_words(get_the_excerpt(), 8); ?></p>
-                    <p><?php the_time( get_option('date_format') ); ?></p>
+                    <p><?php the_time( get_option('date_format') ); ?> · <?php echo fa_get_post_readtime(); ?>分钟</p>
 				</div>
 </header><!-- .site-header -->
 <?php else : ?>

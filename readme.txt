@@ -1,16 +1,16 @@
 === Clair ===
 Theme Name: Clair
-Theme URI: http://onemorecafe.cn/
+Theme URI: http://ngaaron.com/2020/
 Author: AARON
 Author URI: http://ngaaron.com/
-Description: A free wordpress threme name Clair design and develop by Aaron in 2016.
-Version: 1.5
+Description: A free wordpress threme named Clair design and develop by Aaron in 2016.
+Version: 1.8
 
-Requires at least: WordPress 4.4
+Requires at least: WordPress 4.7
 Tested up to: WordPress 4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, gray, green, white, yellow, dark, light, one-column, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Tags: black,gray,white,yellow,dark,light,one-column,fixed-layout,responsive-layout,accessibility-ready,custom-menu, editor-style, featured-images,post-formats, threaded-comments,translation-ready
 
 * Mobile-first, Responsive Layout
 * Custom Colors

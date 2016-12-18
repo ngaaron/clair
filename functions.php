@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Sixteen functions and definitions
+ * Clair functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -11,8 +11,7 @@
  * functions.php file. The child theme's functions.php file is included before
  * the parent theme's file, so the child theme functions would be used.
  *
- * @link https://codex.wordpress.org/Theme_Development
- * @link https://codex.wordpress.org/Child_Themes
+ * @link https://ngaaron.com/2020
  *
  * Functions that are not pluggable (not wrapped in function_exists()) are
  * instead attached to a filter or action hook.
@@ -21,8 +20,8 @@
  * {@link https://codex.wordpress.org/Plugin_API}
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @subpackage Clair
+ * @since Clair 1.0
  */
 
 
@@ -522,3 +521,20 @@ add_action('comment_post', 'ludou_comment_mail_notify', 20, 2);
 
 // 普通访客发表的评论，等博主审核后再发送提醒邮件
 add_action('wp_set_comment_status', 'ludou_comment_mail_notify', 20, 2);
+
+
+function fa_get_postlength(){
+    global $post;
+    return strlen( strip_shortcodes(strip_tags(apply_filters('the_content', $post->post_content))) );
+}
+
+function fa_get_post_img_count(){
+    global $post;
+    preg_match_all('/<img.*?(?: |\\t|\\r|\\n)?src=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>/sim', $post->post_content, $strResult, PREG_PATTERN_ORDER);
+    return count($strResult[1]);
+}
+
+function fa_get_post_readtime(){
+    global $post;
+    return ceil(fa_get_postlength() / 800 + fa_get_post_img_count() * 8 / 60);
+}
