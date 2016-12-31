@@ -1,14 +1,4 @@
-<?php
-/**
- * The template for displaying the footer
- *  Themes URL : https://ngaaron.com/2020
- * Contains the closing of the #content div and all content after
- *
- * @package WordPress
- * @subpackage Clair
- * @since clair 1.3
- */
-?>
+
 
 		</div><!-- .site-content -->
 
