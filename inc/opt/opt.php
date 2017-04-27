@@ -31,6 +31,7 @@ function BaseSettings(){
         if ($_POST['theme_social']=='on') { $display = 'checked'; } else { $display = ''; }
         update_option('theme_social', $display); //checkbox    
         update_option('sp_weibo', $_POST['sp_weibo']); //input
+        update_option('sp_zhihu', $_POST['sp_zhihu']); //input
         update_option('sp_github', $_POST['sp_github']); //input
         update_option('sp_facebook', $_POST['sp_twitter']); //input
         update_option('sp_twitter', $_POST['sp_twitter']); //input

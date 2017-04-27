@@ -83,6 +83,12 @@
                     </td>
                 </tr>
                 <tr valign="top">
+                    <th scope="row"><label for="sp_zhihu">Weibo</label></th>
+                    <td>
+                        <input type="input" name="sp_zhihu" id="sp_zhihu" class="regular-text" value="<?php echo get_option('sp_zhihu'); ?>" />
+                    </td>
+                </tr>
+                <tr valign="top">
                     <th scope="row"><label for="sp_github">Github</label></th>
                     <td>
                         <input type="input" name="sp_github" id="sp_github" class="regular-text" value="<?php echo get_option('sp_github'); ?>" />
