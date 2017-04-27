@@ -4,9 +4,6 @@
         <?php if(get_option('sp_weibo')) : ?>
             <a rel="nofollow" href="http://weibo.com/<?php echo get_option('sp_weibo'); ?>" target="_blank"><i class="fa fa-weibo"></i></a>
         <?php endif; ?>
-        <?php if(get_option('sp_zhihu')) : ?>
-            <a rel="nofollow" href="<?php echo get_option('sp_zhihu'); ?>" target="_blank"><img class="fa" src="https://static.zhihu.com/static/favicon.ico"/></a>
-        <?php endif; ?>
         <?php if(get_option('sp_github')) : ?>
             <a rel="nofollow" href="https://github.com/<?php echo get_option('sp_github'); ?>" target="_blank"><i class="fa fa-github"></i></a>
         <?php endif; ?>
